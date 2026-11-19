@@ -161,5 +161,6 @@ To reproduce the download, graph simplification, and INT8 quantization:
 uv venv .venv
 source .venv/bin/activate
 uv pip install huggingface_hub onnx onnxruntime onnxslim requests
-uv run python optimize_models.py
+uv run python optimize_models.py         # Skips existing assets
+uv run python optimize_models.py --force # Forces re-download and re-optimization
 ```

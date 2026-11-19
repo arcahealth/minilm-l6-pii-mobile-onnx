@@ -3,4 +3,6 @@ raw_models/
 __pycache__/
 *.pyc
 .DS_Store
+.cache/
 *.onnx
+!output_models/minilm_l6_pii.slim.int8.onnx
